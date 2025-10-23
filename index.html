@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kappy IT Solutions - Professional web development, mobile app development, and digital marketing services">
+    <meta name="keywords" content="IT solutions, web development, mobile apps, digital marketing">
+    
+    <title>Kappy IT Solutions - Professional IT Services</title>
+
+    <link rel="icon" href="./images/image.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <!-- Font Awesome & Ion Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- External Libraries -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <style>
+        /* Additional professional styling */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+        
+        .professional-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .professional-header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .professional-header h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h1, .section-title h2 {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--secondary-color);
+            margin: 20px auto;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+        
+        .counter-box {
+            text-align: center;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .counter-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .counter {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 15px 0;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 15px;
+        }
+        
+        .client-logo {
+            max-width: 150px;
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+            opacity: 0.7;
+        }
+        
+        .client-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        .footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 60px 0 20px;
+            text-align: center;
+        }
+        
+        .footer h4 {
+            color: white;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer h4:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 2px;
+            background: var(--secondary-color);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--secondary-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* FAQ Section Styling */
+        #faq {
+            background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+        }
+        
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .faq-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-card:hover {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .faq-header {
+            background: white;
+            border: none;
+            padding: 0;
+        }
+        
+        .faq-question {
+            width: 100%;
+            background: white;
+            border: none;
+            padding: 20px 30px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .faq-question:hover {
+            background: #f8f9fa;
+            color: var(--secondary-color);
+        }
+        
+        .faq-question:focus {
+            outline: none;
+            box-shadow: none;
+        }
+        
+        .faq-question.collapsed .faq-icon {
+            transform: rotate(0deg);
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+            transform: rotate(180deg);
+            color: var(--secondary-color);
+        }
+        
+        .faq-answer {
+            padding: 20px 30px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            line-height: 1.7;
+        }
+        
+        .faq-search {
+            max-width: 500px;
+            margin: 0 auto 40px;
+        }
+        
+        .faq-search .form-control {
+            border-radius: 30px;
+            padding: 15px 25px;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .faq-search .form-control:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+        }
+        
+        .faq-category {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .faq-category-btn {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 30px;
+            padding: 8px 20px;
+            margin: 5px;
+            transition: all 0.3s ease;
+            color: var(--primary-color);
+        }
+        
+        .faq-category-btn:hover, .faq-category-btn.active {
+            background: var(--secondary-color);
+            color: white;
+            border-color: var(--secondary-color);
+        }
+        
+        .faq-contact-cta {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #2980b9 100%);
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+        }
+        
+        /* Footer Centering Styles */
+        .footer-top {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .footer-links ul, .footer-contact, .footer-newsletter {
+            text-align: center;
+        }
+        
+        .footer-links ul {
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links ul li a {
+            color: rgba(255,255,255,0.7);
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links ul li a:hover {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-newsletter form {
+            display: flex;
+            justify-content: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .footer-newsletter .input-group {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/image.png" alt="Kappy IT Logo" height="40">
+                    <span class="ml-2 font-weight-bold">KAPPY IT SOLUTIONS</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+<section id="home" class="professional-header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h1>Transform Your Business with Digital Solutions</h1>
+        <p class="text-muted" style="font-size: 1.25rem; font-weight: 400;">Innovative IT Services for the Modern Enterprise</p>
+        <a href="#contact" class="btn btn-primary">Get Started </a>
+      </div>
+      <div class="col-lg-5 text-center">
+        <i class="fas fa-laptop-code" 
+           aria-hidden="true" 
+           style="font-size: 15rem; opacity: 0.3;"></i>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h1>About Us</h1>
+                <p class="lead">Driving digital transformation for businesses worldwide</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>We Make Creativity Work for Your Brand!</h3>
+                    <p>At Kappy IT Solutions, we combine technical expertise with creative thinking to deliver exceptional digital solutions. Our team of dedicated professionals is constantly innovating to help your business thrive in the digital age.</p>
+                    <p>We believe in building long-term partnerships with our clients, providing ongoing support and adapting to evolving business needs. Our collaborative approach ensures we understand your vision and translate it into tangible results.</p>
+                    <a href="#" class="btn btn-primary-custom mt-3">Learn More </a>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Placeholder for about image -->
+                    <div class="text-center">
+                        <i class="fas fa-users" style="font-size: 10rem; color: var(--secondary-color);"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="service" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h1>Our Services</h1>
+                <p class="lead">Comprehensive IT solutions to drive your business forward</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Web Application Development</h4>
+                        <p>We build responsive, scalable web applications using modern frameworks and technologies to meet your specific business requirements.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Mobile App Development</h4>
+                        <p>Create engaging mobile experiences with our cross-platform and native app development services for iOS and Android.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Digital Marketing</h4>
+                        <p>Boost your online presence with our comprehensive digital marketing strategies including SEO, SEM, and social media marketing.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="counter-box">
+                        <i class="far fa-clock fa-3x mb-3" style="color: var(--secondary-color);"></i>
+                        <div class="counter" data-target="13500">0</div>
+                        <h5>Working Hours</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="counter-box">
+                        <i class="fas fa-gift fa-3x mb-3" style="color: var(--secondary-color);"></i>
+                        <div class="counter" data-target="720">0</div>
+                        <h5>Completed Projects</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="counter-box">
+                        <i class="fas fa-users fa-3x mb-3" style="color: var(--secondary-color);"></i>
+                        <div class="counter" data-target="480">0</div>
+                        <h5>Happy Clients</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="counter-box">
+                        <i class="fas fa-award fa-3x mb-3" style="color: var(--secondary-color);"></i>
+                        <div class="counter" data-target="120">0</div>
+                        <h5>Awards Received</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h1>Our Portfolio</h1>
+                <p class="lead">Showcasing our successful projects and client solutions</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h5>Brew & Co. Café Website</h5>
+                        <p>Designed and developed a modern, responsive website for a local café, featuring online ordering and reservation systems.</p>
+                        <a href="#" class="btn btn-outline-primary">View Project</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h5>StudyHub Tutoring Platform</h5>
+                        <p>Created an intuitive online platform connecting students with qualified tutors for various academic subjects.</p>
+                        <a href="#" class="btn btn-outline-primary">View Project</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h5>Green Gatherings Events</h5>
+                        <p>Developed a comprehensive event planning platform focused on sustainable and eco-friendly event solutions.</p>
+                        <a href="#" class="btn btn-outline-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 text-white" style="background: linear-gradient(135deg, var(--secondary-color) 0%, #2980b9 100%);">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Transform Your Business?</h2>
+            <p class="lead mb-4">Let's discuss how our IT solutions can drive your business growth and success.</p>
+            <a href="#contact" class="btn btn-light btn-lg">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h1>Client Testimonials</h1>
+                <p class="lead">What our clients say about working with us</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="text-center mb-4">
+                            <img src="C:\Users\Nkandu Ng'ona\Desktop\New folder\IT-Company-Website-main\images\7e830e9c49dee63d546ba2b376523d30.jpg" alt="Sarah Johnson" class="rounded-circle" width="100">
+                        </div>
+                        <h5 class="text-center">Peter Sakala</h5>
+                        <p class="text-muted text-center">CEO, TechSolutions Inc.</p>
+                        <p class="text-center">"Kappy IT Solutions transformed our outdated systems into a modern, efficient platform that has increased our productivity by 40%."</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="text-center mb-4">
+                            <img src="C:\Users\Nkandu Ng'ona\Desktop\New folder\IT-Company-Website-main\images\1be57e732a85c0d9ea96c92f3a4b64e1.jpg" alt="Michael Chen" class="rounded-circle" width="100">
+                        </div>
+                        <h5 class="text-center">Mary Mulenga</h5>
+                        <p class="text-muted text-center">Marketing Director, Global Retail</p>
+                        <p class="text-center">"Their digital marketing strategies have significantly increased our online visibility and customer engagement. Highly recommended!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="text-center mb-4">
+                            <img src="C:\Users\Nkandu Ng'ona\Desktop\New folder\IT-Company-Website-main\images\f718a7c6290bcacf48f118915e6b9c5b.jpg" alt="Emily Rodriguez" class="rounded-circle" width="100">
+                        </div>
+                        <h5 class="text-center">Sibeso Tembo</h5>
+                        <p class="text-muted text-center">Founder, EcoStart</p>
+                        <p class="text-center">"The mobile app developed by Kappy has been instrumental in scaling our business and reaching new customer segments."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h1>Our Team</h1>
+                <p class="lead">Meet the talented professionals behind our success</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card team-card-horizontal h-100">
+                        <div class="row no-gutters h-100">
+                            <div class="col-md-5">
+                                <div class="image h-100">
+                                    <img src="./images/pexels-andrea-piacquadio-845434.jpg" class="card-img h-100" alt="Schott Watkins" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body info d-flex flex-column h-100">
+                                    <h5>Schott Watkins</h5>
+                                    <p class="text-muted">Lead Developer</p>
+                                    <p class="flex-grow-1">Developed the shared CSS stylesheet and front-end architecture for multiple client projects.</p>
+                                    <div class="icons mt-auto">
+                                        <a href="https://www.facebook.com/" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                                        <a href="https://twitter.com/login" class="fab fa-twitter" aria-label="Twitter"></a>
+                                        <a href="https://www.instagram.com/" class="fab fa-instagram" aria-label="Instagram"></a>
+                                        <a href="https://www.linkedin.com/" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card team-card-horizontal h-100">
+                        <div class="row no-gutters h-100">
+                            <div class="col-md-5">
+                                <div class="image h-100">
+                                    <img src="C:\Users\Nkandu Ng'ona\Desktop\New folder\IT-Company-Website-main\images\WhatsApp Image 2025-10-23 at 09.48.46_4770dde5.jpg" class="card-img h-100" alt="Nicole Bell" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body info d-flex flex-column h-100">
+                                    <h5>Majata Hichimi</h5>
+                                    <p class="text-muted">UX/UI Designer</p>
+                                    <p class="flex-grow-1">Built the Contact Page and designed user interfaces for multiple web and mobile applications.</p>
+                                    <div class="icons mt-auto">
+                                        <a href="https://www.facebook.com/" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                                        <a href="https://twitter.com/login" class="fab fa-twitter" aria-label="Twitter"></a>
+                                        <a href="https://www.instagram.com/" class="fab fa-instagram" aria-label="Instagram"></a>
+                                        <a href="https://www.linkedin.com/" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card team-card-horizontal h-100">
+                        <div class="row no-gutters h-100">
+                            <div class="col-md-5">
+                                <div class="image h-100">
+                                    <img src="C:\Users\Nkandu Ng'ona\Desktop\New folder\IT-Company-Website-main\images\WhatsApp Image 2025-10-22 at 22.41.59_4a4686dc.jpg" class="card-img h-100" alt="John Doe" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body info d-flex flex-column h-100">
+                                    <h5>Taizya Nakapende</h5>
+                                    <p class="text-muted">Backend Developer</p>
+                                    <p class="flex-grow-1">Created the About Page and implemented server-side logic for various web applications.</p>
+                                    <div class="icons mt-auto">
+                                        <a href="https://www.facebook.com/" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                                        <a href="https://twitter.com/login" class="fab fa-twitter" aria-label="Twitter"></a>
+                                        <a href="https://www.instagram.com/" class="fab fa-instagram" aria-label="Instagram"></a>
+                                        <a href="https://www.linkedin.com/" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Added two more team members -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card team-card-horizontal h-100">
+                        <div class="row no-gutters h-100">
+                            <div class="col-md-5">
+                                <div class="image h-100">
+                                    <img src="C:\Users\Nkandu Ng'ona\Desktop\New folder\IT-Company-Website-main\images\WhatsApp Image 2025-10-22 at 21.58.56_534b8c0a.jpg" class="card-img h-100" alt="Sarah Johnson" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body info d-flex flex-column h-100">
+                                    <h5>Nachula Nachamba</h5>
+                                    <p class="text-muted">Project Manager</p>
+                                    <p class="flex-grow-1">Oversees project timelines and ensures seamless communication between clients and development teams.</p>
+                                    <div class="icons mt-auto">
+                                        <a href="https://www.facebook.com/" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                                        <a href="https://twitter.com/login" class="fab fa-twitter" aria-label="Twitter"></a>
+                                        <a href="https://www.instagram.com/" class="fab fa-instagram" aria-label="Instagram"></a>
+                                        <a href="https://www.linkedin.com/" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card team-card-horizontal h-100">
+                        <div class="row no-gutters h-100">
+                            <div class="col-md-5">
+                                <div class="image h-100">
+                                    <img src="C:\Users\Nkandu Ng'ona\Desktop\New folder\IT-Company-Website-main\images\Gemini_Generated_Image_zhgbuezhgbuezhgb.png" class="card-img h-100" alt="Michael Brown" style="object-fit: cover;">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body info d-flex flex-column h-100">
+                                    <h5>Davies Mubambe</h5>
+                                    <p class="text-muted">Digital Marketing Specialist</p>
+                                    <p class="flex-grow-1">Develops and implements comprehensive digital marketing strategies to boost client online presence.</p>
+                                    <div class="icons mt-auto">
+                                        <a href="https://www.facebook.com/" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                                        <a href="https://twitter.com/login" class="fab fa-twitter" aria-label="Twitter"></a>
+                                        <a href="https://www.instagram.com/" class="fab fa-instagram" aria-label="Instagram"></a>
+                                        <a href="https://www.linkedin.com/" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <h1>Get In Touch</h1>
+                <p class="lead">We'd love to hear from you. Contact us today.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-map h-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.025381832626!2d-77.038718085226!3d38.9071921795701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bcdecbb1df%3A0x715969d86d0b7a0!2s1600%20Pennsylvania%20Ave%20NW%2C%20Washington%2C%20DC%2020500%2C%20USA!5e0!3m2!1sen!2szm!4v1678886543210!5m2!1sen!2szm" width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form bg-light p-4 rounded">
+                        <form action="./contactme.php" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Contact Number</label>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" class="form-control" placeholder="Your Contact Number" maxlength="10" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="How can we help you?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom btn-block">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h1>Frequently Asked Questions</h1>
+                <p class="lead">Quick answers to common questions about our services</p>
+            </div>
+            
+            <!-- FAQ Search -->
+            <div class="faq-search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for answers...">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary-custom" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Categories -->
+            <div class="faq-category">
+                <button class="faq-category-btn active" data-filter="all">All Questions</button>
+                <button class="faq-category-btn" data-filter="services">Services</button>
+                <button class="faq-category-btn" data-filter="pricing">Pricing</button>
+                <button class="faq-category-btn" data-filter="process">Process</button>
+                <button class="faq-category-btn" data-filter="support">Support</button>
+            </div>
+            
+            <!-- FAQ Accordion -->
+            <div class="faq-container">
+                <div class="accordion" id="faqAccordion">
+                    <!-- Pricing Questions -->
+                    <div class="faq-card" data-category="pricing">
+                        <div class="faq-header" id="headingOne">
+                            <button class="faq-question" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How do you determine project costs?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>To get a better idea of the cost of what you want to build, give us a quick phone call. We'll ask you a few questions about:</p>
+                                <ul>
+                                    <li>The nature of your project</li>
+                                    <li>Required functionality and features</li>
+                                    <li>Design complexity</li>
+                                    <li>Integration requirements</li>
+                                </ul>
+                                <p>Then we'll provide you with a ballpark figure. If you're still interested, we'll conduct a detailed analysis and come up with a firm quote tailored to your specific needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Process Questions -->
+                    <div class="faq-card" data-category="process">
+                        <div class="faq-header" id="headingTwo">
+                            <button class="faq-question collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What is your typical project timeline?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>The timeline for any project depends on its complexity and scope. Here are our typical timeframes:</p>
+                                <ul>
+                                    <li><strong>Basic website:</strong> 2-4 weeks</li>
+                                    <li><strong>Custom web application:</strong> 4-12 weeks</li>
+                                    <li><strong>Mobile app:</strong> 6-16 weeks</li>
+                                    <li><strong>Enterprise solution:</strong> 12+ weeks</li>
+                                </ul>
+                                <p>We work closely with you to establish realistic timelines and milestones. The most common delay in project completion is waiting for content and feedback from clients, so we encourage prompt communication throughout the process.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Process Questions -->
+                    <div class="faq-card" data-category="process">
+                        <div class="faq-header" id="headingThree">
+                            <button class="faq-question collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How do we start a project with you?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>Starting a project with us is straightforward:</p>
+                                <ol>
+                                    <li><strong>Initial Consultation:</strong> We discuss your requirements, goals, and vision.</li>
+                                    <li><strong>Proposal & Planning:</strong> We provide a detailed proposal with timeline and cost estimates.</li>
+                                    <li><strong>Design Phase:</strong> Our team creates wireframes and mockups for your approval.</li>
+                                    <li><strong>Development:</strong> We build your solution using industry best practices.</li>
+                                    <li><strong>Testing & Refinement:</strong> Thorough testing and adjustments based on your feedback.</li>
+                                    <li><strong>Launch & Support:</strong> We deploy your solution and provide ongoing support.</li>
+                                </ol>
+                                <p>You can choose an engagement model that best suits your needs, whether it's fixed-price, time & materials, or dedicated team.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Services Questions -->
+                    <div class="faq-card" data-category="services">
+                        <div class="faq-header" id="headingFour">
+                            <button class="faq-question collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                What technologies do you work with?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>Our team is proficient in a wide range of modern technologies:</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Frontend Development</h6>
+                                        <ul>
+                                            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                                            <li>React, Angular, Vue.js</li>
+                                            <li>Bootstrap, Material-UI</li>
+                                            <li>Responsive Web Design</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6>Backend Development</h6>
+                                        <ul>
+                                            <li>Node.js, Python, PHP, Java</li>
+                                            <li>Express, Django, Laravel</li>
+                                            <li>MySQL, PostgreSQL, MongoDB</li>
+                                            <li>RESTful APIs, GraphQL</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>We stay current with industry trends and select the most appropriate technology stack for each project based on your specific requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Services Questions -->
+                    <div class="faq-card" data-category="services">
+                        <div class="faq-header" id="headingFive">
+                            <button class="faq-question collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Do you provide ongoing support and maintenance?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>Yes, we offer comprehensive support and maintenance packages to ensure your digital solutions continue to perform optimally. Our support services include:</p>
+                                <ul>
+                                    <li>Regular security updates and patches</li>
+                                    <li>Performance monitoring and optimization</li>
+                                    <li>Bug fixes and troubleshooting</li>
+                                    <li>Content updates and minor modifications</li>
+                                    <li>Backup management and disaster recovery</li>
+                                    <li>Technical support via email, phone, or ticketing system</li>
+                                </ul>
+                                <p>We offer flexible support plans tailored to your needs, from basic maintenance to full managed services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pricing Questions -->
+                    <div class="faq-card" data-category="pricing">
+                        <div class="faq-header" id="headingSix">
+                            <button class="faq-question collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Do you offer payment plans?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>Yes, we understand that budget considerations are important for our clients. We offer flexible payment options:</p>
+                                <ul>
+                                    <li><strong>Milestone-based payments:</strong> Payments tied to project milestones</li>
+                                    <li><strong>Monthly installments:</strong> Spread the cost over the project duration</li>
+                                    <li><strong>Retainer agreements:</strong> For ongoing development and support</li>
+                                    <li><strong>Project-based pricing:</strong> Fixed price for well-defined projects</li>
+                                </ul>
+                                <p>We're happy to discuss payment options that work for your budget during our initial consultation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Support Questions -->
+                    <div class="faq-card" data-category="support">
+                        <div class="faq-header" id="headingSeven">
+                            <button class="faq-question collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                What is your response time for support requests?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>Our response times vary based on the severity of the issue and your support plan:</p>
+                                <ul>
+                                    <li><strong>Critical issues</strong> (site down, major functionality broken): 1-2 hours</li>
+                                    <li><strong>High priority</strong> (significant feature not working): 4-8 hours</li>
+                                    <li><strong>Medium priority</strong> (minor bugs, enhancements): 24-48 hours</li>
+                                    <li><strong>Low priority</strong> (general questions, small changes): 3-5 business days</li>
+                                </ul>
+                                <p>We provide 24/7 monitoring for critical systems and offer extended support hours for clients with premium support agreements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Process Questions -->
+                    <div class="faq-card" data-category="process">
+                        <div class="faq-header" id="headingEight">
+                            <button class="faq-question collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                How do you ensure the quality of your work?
+                                <i class="fas fa-chevron-down faq-icon"></i>
+                            </button>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#faqAccordion">
+                            <div class="faq-answer">
+                                <p>Quality is at the core of everything we do. Our quality assurance process includes:</p>
+                                <ul>
+                                    <li><strong>Code Reviews:</strong> All code is reviewed by senior developers</li>
+                                    <li><strong>Automated Testing:</strong> Comprehensive test suites for functionality</li>
+                                    <li><strong>Manual Testing:</strong> User experience testing across devices and browsers</li>
+                                    <li><strong>Performance Testing:</strong> Ensuring optimal speed and responsiveness</li>
+                                    <li><strong>Security Audits:</strong> Regular security assessments and vulnerability scanning</li>
+                                    <li><strong>Client Feedback:</strong> Regular check-ins and demos throughout development</li>
+                                </ul>
+                                <p>We follow industry best practices and maintain high coding standards to deliver robust, scalable, and maintainable solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact CTA -->
+                <div class="faq-contact-cta">
+                    <h3>Still have questions?</h3>
+                    <p class="mb-4">Can't find the answer you're looking for? Please reach out to our friendly team.</p>
+                    <a href="#contact" class="btn btn-light">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>About Us</h4>
+                                <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">About us</a></li>
+                                    <li><a href="#service">Our services</a></li>
+                                    <li><a href="#">Terms & condition</a></li>
+                                    <li><a href="#">Privacy policy</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>Useful Links</h4>
+                                <ul>
+                                    <li><a href="#portfolio">Portfolio</a></li>
+                                    <li><a href="#team">Team</a></li>
+                                    <li><a href="careers.html">Career</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="#faq">FAQ</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 footer-contact">
+                                <h4>Contact Us</h4>
+                                <p>
+                                    1300 Center Avenue<br>
+                                    Kalewa, Road<br>
+                                    Zambia <br>
+                                    <strong>Phone:</strong> +260971793185<br>
+                                    <strong>Email:</strong> info@kappyitsolutions.com<br>
+                                </p>
+
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/" aria-label="Facebook"><i class="ion-logo-facebook"></i></a>
+                                    <a href="https://twitter.com/login?lang=en" aria-label="Twitter"><i class="ion-logo-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="ion-logo-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/" aria-label="Instagram"><i class="ion-logo-instagram"></i></a>
+                                    <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin" aria-label="Google Plus"><i class="ion-logo-googleplus"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 footer-newsletter">
+                                <h4>Newsletter</h4>
+                                <p>Subscribe to our newsletter to receive updates on our latest services and industry insights.</p>
+                                <form action="" method="post">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="Your Email">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 copyright">
+                    <p class="mb-0">Copyright © 2025 Kappy IT Solutions. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script>
+        // Back to top button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('.back-to-top').addClass('active');
+            } else {
+                $('.back-to-top').removeClass('active');
+            }
+        });
+        
+        $('.back-to-top').click(function() {
+            $('html, body').animate({scrollTop: 0}, 800);
+            return false;
+        });
+        
+        // Counter animation
+        $(document).ready(function() {
+            $('.counter').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).data('target')
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+            
+            // FAQ Search Functionality
+            $('.faq-search input').on('keyup', function() {
+                var value = $(this).val().toLowerCase();
+                $('.faq-card').filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+            
+            // FAQ Category Filtering
+            $('.faq-category-btn').on('click', function() {
+                var filter = $(this).data('filter');
+                
+                $('.faq-category-btn').removeClass('active');
+                $(this).addClass('active');
+                
+                if (filter === 'all') {
+                    $('.faq-card').show();
+                } else {
+                    $('.faq-card').hide();
+                    $('.faq-card[data-category="' + filter + '"]').show();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
