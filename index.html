@@ -382,6 +382,37 @@
         .footer-newsletter .input-group {
             width: 100%;
         }
+        
+        /* Team Section Fixes */
+        .team-card-horizontal {
+            height: 100%;
+        }
+        
+        .team-card-horizontal .card-img {
+            object-fit: cover;
+        }
+        
+        .team-card-horizontal .info {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .team-card-horizontal .icons {
+            margin-top: auto;
+        }
+        
+        /* Image placeholders for missing images */
+        .placeholder-img {
+            width: 100%;
+            height: 100%;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-size: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -404,7 +435,7 @@
                         <li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#careers">Careers</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
                     </ul>
@@ -414,22 +445,23 @@
     </header>
 
     <!-- Hero Section -->
-<section id="home" class="professional-header">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7">
-        <h1>Transform Your Business with Digital Solutions</h1>
-        <p class="text-muted" style="font-size: 1.25rem; font-weight: 400;">Innovative IT Services for the Modern Enterprise</p>
-        <a href="#contact" class="btn btn-primary">Get Started </a>
-      </div>
-      <div class="col-lg-5 text-center">
-        <i class="fas fa-laptop-code" 
-           aria-hidden="true" 
-           style="font-size: 15rem; opacity: 0.3;"></i>
-      </div>
-    </div>
-  </div>
-</section>
+    <section id="home" class="professional-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1>Transform Your Business with Digital Solutions</h1>
+                    <p class="text-light" style="font-size: 1.25rem; font-weight: 400;">Innovative IT Services for the Modern Enterprise</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <i class="fas fa-laptop-code" 
+                       aria-hidden="true" 
+                       style="font-size: 15rem; opacity: 0.3;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
@@ -442,7 +474,7 @@
                     <h3>We Make Creativity Work for Your Brand!</h3>
                     <p>At Kappy IT Solutions, we combine technical expertise with creative thinking to deliver exceptional digital solutions. Our team of dedicated professionals is constantly innovating to help your business thrive in the digital age.</p>
                     <p>We believe in building long-term partnerships with our clients, providing ongoing support and adapting to evolving business needs. Our collaborative approach ensures we understand your vision and translate it into tangible results.</p>
-                    <a href="#" class="btn btn-primary-custom mt-3">Learn More </a>
+                    <a href="#contact" class="btn btn-primary-custom mt-3">Learn More</a>
                 </div>
                 <div class="col-lg-6">
                     <!-- Placeholder for about image -->
@@ -469,7 +501,7 @@
                         </div>
                         <h4>Web Application Development</h4>
                         <p>We build responsive, scalable web applications using modern frameworks and technologies to meet your specific business requirements.</p>
-                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        <a href="#contact" class="btn btn-outline-primary">Learn More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -479,7 +511,7 @@
                         </div>
                         <h4>Mobile App Development</h4>
                         <p>Create engaging mobile experiences with our cross-platform and native app development services for iOS and Android.</p>
-                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        <a href="#contact" class="btn btn-outline-primary">Learn More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -489,7 +521,7 @@
                         </div>
                         <h4>Digital Marketing</h4>
                         <p>Boost your online presence with our comprehensive digital marketing strategies including SEO, SEM, and social media marketing.</p>
-                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        <a href="#contact" class="btn btn-outline-primary">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -547,7 +579,7 @@
                         </div>
                         <h5>Brew & Co. Café Website</h5>
                         <p>Designed and developed a modern, responsive website for a local café, featuring online ordering and reservation systems.</p>
-                        <a href="#" class="btn btn-outline-primary">View Project</a>
+                        <a href="#contact" class="btn btn-outline-primary">View Project</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -557,7 +589,7 @@
                         </div>
                         <h5>StudyHub Tutoring Platform</h5>
                         <p>Created an intuitive online platform connecting students with qualified tutors for various academic subjects.</p>
-                        <a href="#" class="btn btn-outline-primary">View Project</a>
+                        <a href="#contact" class="btn btn-outline-primary">View Project</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -567,7 +599,7 @@
                         </div>
                         <h5>Green Gatherings Events</h5>
                         <p>Developed a comprehensive event planning platform focused on sustainable and eco-friendly event solutions.</p>
-                        <a href="#" class="btn btn-outline-primary">View Project</a>
+                        <a href="#contact" class="btn btn-outline-primary">View Project</a>
                     </div>
                 </div>
             </div>
@@ -594,7 +626,9 @@
                 <div class="col-lg-4 mb-4">
                     <div class="testimonial-card">
                         <div class="text-center mb-4">
-                            <img src="C:\Users\Nkandu Ng'ona\Desktop\New folder\IT-Company-Website-main\images\7e830e9c49dee63d546ba2b376523d30.jpg" alt="Sarah Johnson" class="rounded-circle" width="100">
+                            <div class="placeholder-img rounded-circle mx-auto" style="width: 100px; height: 100px;">
+                                <i class="fas fa-user"></i>
+                            </div>
                         </div>
                         <h5 class="text-center">Peter Sakala</h5>
                         <p class="text-muted text-center">CEO, TechSolutions Inc.</p>
@@ -604,7 +638,9 @@
                 <div class="col-lg-4 mb-4">
                     <div class="testimonial-card">
                         <div class="text-center mb-4">
-                            <img src="C:\Users\Nkandu Ng'ona\Desktop\New folder\IT-Company-Website-main\images\1be57e732a85c0d9ea96c92f3a4b64e1.jpg" alt="Michael Chen" class="rounded-circle" width="100">
+                            <div class="placeholder-img rounded-circle mx-auto" style="width: 100px; height: 100px;">
+                                <i class="fas fa-user"></i>
+                            </div>
                         </div>
                         <h5 class="text-center">Mary Mulenga</h5>
                         <p class="text-muted text-center">Marketing Director, Global Retail</p>
@@ -614,7 +650,9 @@
                 <div class="col-lg-4 mb-4">
                     <div class="testimonial-card">
                         <div class="text-center mb-4">
-                            <img src="C:\Users\Nkandu Ng'ona\Desktop\New folder\IT-Company-Website-main\images\f718a7c6290bcacf48f118915e6b9c5b.jpg" alt="Emily Rodriguez" class="rounded-circle" width="100">
+                            <div class="placeholder-img rounded-circle mx-auto" style="width: 100px; height: 100px;">
+                                <i class="fas fa-user"></i>
+                            </div>
                         </div>
                         <h5 class="text-center">Sibeso Tembo</h5>
                         <p class="text-muted text-center">Founder, EcoStart</p>
@@ -638,7 +676,9 @@
                         <div class="row no-gutters h-100">
                             <div class="col-md-5">
                                 <div class="image h-100">
-                                    <img src="./images/pexels-andrea-piacquadio-845434.jpg" class="card-img h-100" alt="Schott Watkins" style="object-fit: cover;">
+                                    <div class="placeholder-img h-100">
+                                        <i class="fas fa-user"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-7">
@@ -662,7 +702,9 @@
                         <div class="row no-gutters h-100">
                             <div class="col-md-5">
                                 <div class="image h-100">
-                                    <img src="imagefolder/WhatsApp Image 2025-10-23 at 09.48.46_4770dde5.jpg" class="card-img h-100" alt="Nicole Bell" style="object-fit: cover;">
+                                    <div class="placeholder-img h-100">
+                                        <i class="fas fa-user"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-7">
@@ -686,7 +728,9 @@
                         <div class="row no-gutters h-100">
                             <div class="col-md-5">
                                 <div class="image h-100">
-                                    <img src="C:\Users\Nkandu Ng'ona\Desktop\New folder\IT-Company-Website-main\images\WhatsApp Image 2025-10-22 at 22.41.59_4a4686dc.jpg" class="card-img h-100" alt="John Doe" style="object-fit: cover;">
+                                    <div class="placeholder-img h-100">
+                                        <i class="fas fa-user"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-7">
@@ -711,7 +755,9 @@
                         <div class="row no-gutters h-100">
                             <div class="col-md-5">
                                 <div class="image h-100">
-                                    <img src="imagefolder/WhatsApp Image 2025-10-22 at 21.58.56_534b8c0a.jpg" alt="Sarah Johnson" style="object-fit: cover;">
+                                    <div class="placeholder-img h-100">
+                                        <i class="fas fa-user"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-7">
@@ -735,7 +781,9 @@
                         <div class="row no-gutters h-100">
                             <div class="col-md-5">
                                 <div class="image h-100">
-                                    <img src=imagefolder/Gemini_Generated_Image_zhgbuezhgbuezhgb.png class="card-img h-100" alt="Michael Brown" style="object-fit: cover;">
+                                    <div class="placeholder-img h-100">
+                                        <i class="fas fa-user"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-7">
@@ -768,7 +816,7 @@
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <div class="contact-map h-100">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.025381832626!2d-77.038718085226!3d38.9071921795701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bcdecbb1df%3A0x715969d86d0b7a0!2s1600%20Pennsylvania%20Ave%20NW%2C%20Washington%2C%20DC%2020500%2C%20USA!5e0!3m2!1sen!2szm!4v1678886543210!5m2!1sen!2szm" width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.025381832626!2d-77.038718085226!3d38.9071921795701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bcdecbb1df%3A0x715969d86d0b7a0!2s1600%20Pennsylvania%20Ave%20NW%2C%20Washington%2C%20DC%2020500%2C%20USA!5e0!3m2!1sen!2szm!4v1678886543210!5m2!1sen!2szm" width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy" title="Our Location"></iframe>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -1050,8 +1098,8 @@
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#about">About us</a></li>
                                     <li><a href="#service">Our services</a></li>
-                                    <li><a href="#">Terms & condition</a></li>
-                                    <li><a href="#">Privacy policy</a></li>
+                                    <li><a href="#terms">Terms & condition</a></li>
+                                    <li><a href="#privacy">Privacy policy</a></li>
                                 </ul>
                             </div>
 
@@ -1060,7 +1108,7 @@
                                 <ul>
                                     <li><a href="#portfolio">Portfolio</a></li>
                                     <li><a href="#team">Team</a></li>
-                                    <li><a href="careers.html">Career</a></li>
+                                    <li><a href="#careers">Career</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                     <li><a href="#faq">FAQ</a></li>
                                 </ul>
@@ -1112,7 +1160,7 @@
         </div>
     </footer>
 
-    <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+    <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -1135,7 +1183,8 @@
             }
         });
         
-        $('.back-to-top').click(function() {
+        $('.back-to-top').click(function(e) {
+            e.preventDefault();
             $('html, body').animate({scrollTop: 0}, 800);
             return false;
         });
@@ -1174,6 +1223,17 @@
                 } else {
                     $('.faq-card').hide();
                     $('.faq-card[data-category="' + filter + '"]').show();
+                }
+            });
+            
+            // Smooth scrolling for navigation links
+            $('a.nav-link').on('click', function(e) {
+                if (this.hash !== "") {
+                    e.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 70
+                    }, 800);
                 }
             });
         });
